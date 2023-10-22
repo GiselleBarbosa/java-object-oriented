@@ -1,23 +1,24 @@
 package com.giselle.pilares_do_POO.servico_mensagem_instantanea;
 
 public class ComputadorPedrinho {
-  // abrindo mensagem
   public static void main(String[] args) {
 
-    System.out.println("MSN");
-    MSNMessenger msn = new MSNMessenger();
-    msn.enviarMensagem();
-    msn.receberMensagem();
+    ServicoMensagemInstantanea smi = null;
 
-    System.out.println("FACEBOOK");
-    FacebookMessenger facebook = new FacebookMessenger();
-    facebook.enviarMensagem();
-    facebook.receberMensagem();
+    /*
+     * NÃO SE SABE QUAL APP
+     * MAS QUALQUER UM DEVERÁ ENVIAR E RECEBER MENSAGEM
+     */
+    String appEscolhido = "???";
 
-    System.out.println("TELEGRAM");
-    Telegram telegram = new Telegram();
-    telegram.enviarMensagem();
-    telegram.receberMensagem();
+    if (appEscolhido.equals("msn"))
+      smi = new MSNMessenger();
+    else if (appEscolhido.equals("fbm"))
+      smi = new FacebookMessenger();
+    else if (appEscolhido.equals("tlg"))
+      smi = new Telegram();
 
+    smi.enviarMensagem();
+    smi.receberMensagem();
   }
 }
