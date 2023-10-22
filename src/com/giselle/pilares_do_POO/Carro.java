@@ -1,6 +1,6 @@
 package com.giselle.pilares_do_POO;
 
-public class Carro {
+public class Carro extends Veiculo {
 
   public void ligar() {
     checkCalibragemPneus();
