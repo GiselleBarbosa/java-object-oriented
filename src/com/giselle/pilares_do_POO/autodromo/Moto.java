@@ -1,4 +1,4 @@
-package com.giselle.pilares_do_POO;
+package com.giselle.pilares_do_POO.autodromo;
 
 public class Moto extends Veiculo {
 
