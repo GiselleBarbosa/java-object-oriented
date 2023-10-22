@@ -1,6 +1,6 @@
 package com.giselle.pilares_do_POO;
 
-public class Veiculo {
+public abstract class Veiculo {
 
   private String chassi;
 
@@ -11,4 +11,6 @@ public class Veiculo {
   public String setChassi(String chassi) {
     return this.chassi = chassi;
   }
+
+  public abstract void ligar();
 }
