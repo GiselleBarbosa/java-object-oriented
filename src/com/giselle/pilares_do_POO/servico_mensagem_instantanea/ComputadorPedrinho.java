@@ -9,12 +9,12 @@ public class ComputadorPedrinho {
     msn.enviarMensagem();
     msn.receberMensagem();
 
-    System.out.println("Facebook");
+    System.out.println("FACEBOOK");
     FacebookMessenger facebook = new FacebookMessenger();
     facebook.enviarMensagem();
     facebook.receberMensagem();
 
-    System.out.println("Telegram");
+    System.out.println("TELEGRAM");
     Telegram telegram = new Telegram();
     telegram.enviarMensagem();
     telegram.receberMensagem();
