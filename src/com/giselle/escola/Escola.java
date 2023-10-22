@@ -4,11 +4,10 @@ public class Escola {
   public static void main(String[] args) {
     Aluno felipe = new Aluno();
     felipe.setIdade(7);
-    ;
-    felipe.setNome("Felipe");
+    felipe.setNome(" Marcos Felipe");
+    felipe.setSerie(1);
 
-    System.out.println("O aluno " + felipe.getNome() + " tem " + felipe.getIdade() + " anos ");
-    // RESULTADO NO CONSOLE
-    // O aluno Felipe tem 8 anos
+    System.out.println(
+        "O aluno " + felipe.getNome() + " tem " + felipe.getIdade() + " anos " + "e esta na " + felipe.getSerie()+ " serie");
   }
 }
