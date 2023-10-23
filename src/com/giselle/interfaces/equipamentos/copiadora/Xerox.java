@@ -1,7 +1,10 @@
 package com.giselle.interfaces.equipamentos.copiadora;
 
-import com.giselle.interfaces.Copiadora;
+public class Xerox implements Copiadora {
 
-public class Xerox extends Copiadora {
+  @Override
+  public void copiar() {
+    System.out.println("Copiando");
+  }
 
 }
