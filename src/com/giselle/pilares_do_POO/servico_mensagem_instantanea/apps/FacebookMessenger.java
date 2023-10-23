@@ -1,9 +1,10 @@
-package com.giselle.pilares_do_POO.servico_mensagem_instantanea;
+package com.giselle.pilares_do_POO.servico_mensagem_instantanea.apps;
 
 public class FacebookMessenger extends ServicoMensagemInstantanea {
 
   @Override
   public void enviarMensagem() {
+    validarConectadoInternet();
     System.out.println("Enviando mensagem pelo FACEBOOK");
   }
 
